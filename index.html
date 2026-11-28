@@ -109,21 +109,6 @@
         <!-- CHART + MONTHLY SUMMARY (combined panel) -->
         <section class="card chart-summary-card" aria-label="Spending chart and monthly summary">
 
-          <!-- Chart section -->
-          <div class="chart-panel">
-            <h2 class="card-title card-title--ruled">Spending by Category</h2>
-            <div class="chart-wrapper" id="chartWrapper">
-              <canvas id="spendingChart" aria-label="Pie chart of spending by category" role="img"></canvas>
-            </div>
-            <div class="chart-empty hidden" id="chartEmpty">
-              <span>&#128202;</span>
-              <p>No data yet. Add a transaction to see the chart.</p>
-            </div>
-          </div>
-
-          <!-- Divider -->
-          <div class="panel-divider" aria-hidden="true"></div>
-
           <!-- Monthly Summary section -->
           <div class="summary-panel">
             <h2 class="card-title card-title--ruled">Monthly Summary</h2>
@@ -136,6 +121,21 @@
             </div>
           </div>
 
+          <!-- Divider -->
+          <div class="panel-divider" aria-hidden="true"></div>
+
+          <!-- Chart section -->
+          <div class="chart-panel">
+            <h2 class="card-title card-title--ruled">Spending by Category</h2>
+            <div class="chart-wrapper" id="chartWrapper">
+              <canvas id="spendingChart" aria-label="Pie chart of spending by category" role="img"></canvas>
+            </div>
+            <div class="chart-empty hidden" id="chartEmpty">
+              <span>&#128202;</span>
+              <p>No data yet. Add a transaction to see the chart.</p>
+            </div>
+          </div>
+          
         </section>
 
       </div><!-- /.top-grid -->
