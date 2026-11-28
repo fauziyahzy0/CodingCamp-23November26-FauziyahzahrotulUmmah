@@ -1,0 +1,900 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create the `Expense-Budget-Visualizer/` root folder with `css/` and `js/` subfolders.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770616269
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770653399
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770683806
+      }
+    ],
+    "1.2 Create placeholder files: `index.html`, `css/style.css`, `js/script.js`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770619097
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770691873
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770721883
+      }
+    ],
+    "2.1 Add the HTML5 boilerplate to `index.html`: `<!DOCTYPE html>`, `<html lang=\"en\">`, `<head>` (charset, viewport, title), `<body>`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770620803
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770734641
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770766960
+      }
+    ],
+    "2.2 Link `css/style.css` in `<head>` and load Chart.js from CDN (`<script>` before the closing `</body>`).": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770621834
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770775173
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770807342
+      }
+    ],
+    "2.3 Link `js/script.js` after the Chart.js script tag.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770622267
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770814672
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770846003
+      }
+    ],
+    "2.4 Add the sticky `<header>` section with the app name and subtitle.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770622485
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770853375
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770883176
+      }
+    ],
+    "2.5 Add the full-width balance card (`<section id=\"balance-card\">`) with placeholders for total amount, budget limit display, and the warning strip element.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770622732
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770890880
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770931109
+      }
+    ],
+    "2.6 Add the top two-column grid: Add Transaction `<form>` on the left (fields: item name, amount, category select, date, optional budget limit) and the `<canvas id=\"spending-chart\">` on the right.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770622960
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770937942
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771107488
+      }
+    ],
+    "2.7 Add the Transaction List section: sort control buttons and the `<table>` (or container for stacked cards on mobile) with `<thead>` and `<tbody id=\"transaction-body\">`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770623230
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771113838
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771225119
+      }
+    ],
+    "2.8 Add the Monthly Summary section: `<div id=\"monthly-summary\">` to be populated by JavaScript.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770623472
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771232369
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771326645
+      }
+    ],
+    "2.9 Add the static `<footer>` attribution line.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770623727
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771334001
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771366238
+      }
+    ],
+    "3.1 Define CSS custom properties (variables) for the blue palette: `--blue-900` (#0d2b55) through `--blue-50` (#eff6ff), plus danger red (#ef4444) and neutral grays.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770623977
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771382067
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771536358
+      }
+    ],
+    "3.2 Write a CSS reset and base typography rules: Segoe UI / system-ui stack, weights 400 / 600 / 700 / 800.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770624233
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771544576
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771595448
+      }
+    ],
+    "3.3 Style the sticky header with the gradient background.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770624455
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771602082
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771640847
+      }
+    ],
+    "3.4 Style the balance card: full-width gradient, rounded corners (`border-radius: 12px`), subtle shadow, smooth hover transitions. Add the `.over-limit` variant that switches to the danger red palette and shows the left-border warning strip.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770624702
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771648516
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771734625
+      }
+    ],
+    "3.5 Style the top grid as a two-column CSS Grid layout (form left, chart right).": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770624958
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771742405
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771780817
+      }
+    ],
+    "3.6 Style the Add Transaction form: input fields, select, date picker, submit button, inline error message elements (`.error` class).": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625101
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771789298
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771858277
+      }
+    ],
+    "3.7 Style the transaction table: header row, data rows, category badge chips, the Delete button (`white-space: nowrap` so the label never wraps), hover states.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625349
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771866060
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771914349
+      }
+    ],
+    "3.8 Style the sort control bar: button group, active-sort indicator, horizontal scroll container with hidden scrollbar for overflow on small screens.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625517
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771923184
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771962786
+      }
+    ],
+    "3.9 Style month cards: grid layout, over-limit red highlight variant.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625632
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795771970201
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772004146
+      }
+    ],
+    "3.10 Style empty-state messages for the transaction list and chart area.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625776
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772011656
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772043996
+      }
+    ],
+    "3.11 Style the footer.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770625998
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772051424
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772092430
+      }
+    ],
+    "3.12 Add the 768 px responsive breakpoint: single-column layout; transaction table transforms to stacked card list using `data-label` pseudo-labels (`content: attr(data-label)`); sort controls scroll horizontally with scrollbar hidden.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770626248
+      },
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795772099866
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772130643
+      }
+    ],
+    "3.13 Add the 400 px responsive breakpoint: reduce balance amount font size; collapse monthly summary grid to one column.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770626477
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772130773
+      }
+    ],
+    "4.1 Create the top-level IIFE wrapper in `js/script.js` to encapsulate all modules without polluting the global scope.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770626716
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772130873
+      }
+    ],
+    "4.2 Implement the `escapeHtml(str)` utility that escapes `<`, `>`, `&`, `\"`, and `'` before any user string is inserted into `innerHTML`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770626945
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131013
+      }
+    ],
+    "4.3 Implement the `generateId()` utility: `Date.now().toString(36)` concatenated with a random suffix to produce a unique transaction ID.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770627229
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131163
+      }
+    ],
+    "5.1 Implement `Storage.load()`: reads `ebv_transactions` from `localStorage`, parses JSON, and returns the array. Wraps `JSON.parse` in a try/catch and returns `[]` on failure.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770627458
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131331
+      }
+    ],
+    "5.2 Implement `Storage.save(transactions)`: serialises the array to JSON and writes it to `ebv_transactions`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770627754
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131445
+      }
+    ],
+    "5.3 Implement `Storage.loadLimit()`: reads `ebv_budget_limit` and returns it as a number, or `null` if absent or non-numeric.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770627976
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131646
+      }
+    ],
+    "5.4 Implement `Storage.saveLimit(value)`: writes the numeric limit as a string to `ebv_budget_limit`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770628382
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131737
+      }
+    ],
+    "6.1 Implement `Form.init()`: registers the submit event listener on the Add Transaction form; on submit, reads and validates all required fields (item name non-empty, amount positive number, category one of Food/Transport/Fun, date present); displays inline error messages and applies the `.error` CSS class for each invalid field; blocks submission if any field is invalid.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770628693
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131847
+      }
+    ],
+    "6.2 Implement the transaction-creation path in `Form`: on valid submission, build the transaction object (`{ id, name, amount, category, date }`), append it to the array from `Storage.load()`, call `Storage.save()`, then call `App.refresh()`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770629015
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772131984
+      }
+    ],
+    "6.3 Implement the budget-limit save path in `Form`: when the optional limit field has a valid numeric value, call `Storage.saveLimit()` on submission; restore the saved limit into the field on `Form.init()`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770629487
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132107
+      }
+    ],
+    "6.4 Implement field reset in `Form`: after a successful save, clear all required fields back to their default empty / placeholder state.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770629765
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132176
+      }
+    ],
+    "6.5 Implement `Balance.render(transactions, limit)`: sums all `amount` values with `Array.reduce`; compares total to `limit`; toggles the `.over-limit` CSS class on the balance card; shows or hides the warning strip with the left-border accent.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770629982
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132250
+      }
+    ],
+    "6.6 Implement the `List.deleteHandler(id)`: filters the transaction with the matching `id` out of the stored array, calls `Storage.save()`, then calls `App.refresh()`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770630238
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132340
+      }
+    ],
+    "6.7 Implement `List.render(transactions)`: builds the table rows using `escapeHtml` for all user-supplied strings; each row has a Delete button labelled \"Delete\" (full word) with the transaction ID in a `data-id` attribute; wires delete buttons to `List.deleteHandler`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770630456
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132419
+      }
+    ],
+    "7.1 Implement `ChartModule.render(transactions)`: aggregates transaction amounts by category (Food, Transport, Fun); if there are no transactions, destroys any existing Chart.js instance and shows the empty-state placeholder.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770630706
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132520
+      }
+    ],
+    "7.2 On first render (or after the chart was destroyed), create a new Chart.js pie chart instance on the `<canvas>` element with the aggregated data.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770630965
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132608
+      }
+    ],
+    "7.3 On subsequent renders with existing data, call `.update()` on the existing Chart.js instance rather than re-creating it, to avoid memory leaks.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770631241
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132674
+      }
+    ],
+    "7.4 Add a `max-height` guard on the chart canvas so it does not overflow its container at any viewport width.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770631479
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132762
+      }
+    ],
+    "8.1 Implement `monthKey(dateString)`: converts an ISO 8601 date string to a local-timezone `Date` object and returns a `\"YYYY-MM\"` key using `getFullYear()` and `getMonth()` (not string slicing) to ensure correct timezone grouping.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770631743
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132828
+      }
+    ],
+    "8.2 Implement `Summary.render(transactions, limit)`: groups transactions by `monthKey`; for each group, computes total spend and transaction count; sorts groups newest-first; renders one month card per group showing the month name, total spend, and count.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770631995
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132898
+      }
+    ],
+    "8.3 Apply the over-limit highlight to any month card whose total spend equals or exceeds the applicable budget limit. Use the per-month user-configured limit if one is set; otherwise use the global budget limit.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770632247
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772132964
+      }
+    ],
+    "9.1 Implement the sort state machine in `List`: maintain a `currentSort` variable (default: `\"date-desc\"`). The available sort keys are: `\"date-desc\"` (newest first), `\"amount-desc\"`, `\"amount-asc\"`, `\"category-asc\"` (A to Z).": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770632480
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133037
+      }
+    ],
+    "9.2 Wire each sort button to update `currentSort` and call `App.refresh()`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770632746
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133158
+      }
+    ],
+    "9.3 In `List.render`, sort a copy of the transactions array by `currentSort` before rendering rows. Never mutate the source array or write sort state to `localStorage`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770633039
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133245
+      }
+    ],
+    "9.4 Apply an active-sort CSS class to the currently selected sort button so the user can see which sort is active.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770633335
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133309
+      }
+    ],
+    "10.1 In `Balance.render`, treat total spending equal to the budget limit as exceeding it: the `.over-limit` state triggers when `total >= limit`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770633602
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133374
+      }
+    ],
+    "10.2 Ensure the warning strip has a visible left-border accent (distinct border-left colour) in addition to the red background.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770633861
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133447
+      }
+    ],
+    "10.3 When no budget limit is stored (`Storage.loadLimit()` returns `null`), render the balance card in its normal blue gradient state with no warning.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770634152
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133528
+      }
+    ],
+    "10.4 In `Summary.render`, apply the same `>= limit` threshold for month-card highlighting.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770634444
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133604
+      }
+    ],
+    "11.1 Open `index.html` directly in a browser (no server) and verify the page loads without console errors.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770634751
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133678
+      }
+    ],
+    "11.2 Add at least one transaction for each category (Food, Transport, Fun) and confirm: the balance card total updates, the pie chart shows three segments, the transaction list shows all rows, and the monthly summary shows a card.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770635095
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133784
+      }
+    ],
+    "11.3 Verify inline validation: submit the form with each required field empty in turn and confirm the correct error message appears and no transaction is saved.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770635388
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133868
+      }
+    ],
+    "11.4 Set a budget limit below the current total and confirm the balance card turns red with the left-border warning strip.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770635689
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772133934
+      }
+    ],
+    "11.5 Set a budget limit equal to the current total and confirm the balance card shows the over-limit (red) state.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770635949
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134011
+      }
+    ],
+    "11.6 Delete a transaction and confirm: the balance card recalculates, the pie chart updates, and the monthly summary updates.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770636247
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134130
+      }
+    ],
+    "11.7 Verify sort controls: test each of the four sort options and confirm the list re-orders correctly without altering `localStorage`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770636478
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134209
+      }
+    ],
+    "11.8 Add transactions across two different calendar months and confirm the monthly summary shows two separate cards sorted newest-first.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770636856
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134293
+      }
+    ],
+    "11.9 Reload the page and confirm all transactions and the budget limit are restored from `localStorage`.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770637105
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134374
+      }
+    ],
+    "11.10 Corrupt `ebv_transactions` in DevTools (`localStorage.setItem(\"ebv_transactions\", \"bad json\")`) and reload; confirm the app starts with an empty list and does not crash.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770637340
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134451
+      }
+    ],
+    "11.11 Resize the viewport to 768 px and below; confirm the single-column layout, stacked card table, and horizontal sort scroll all render correctly.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770637591
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134527
+      }
+    ],
+    "11.12 Resize the viewport to 400 px and below; confirm the balance amount font is smaller and the monthly grid collapses to one column.": [
+      {
+        "executionId": "f98509bd-66f2-4fa4-9393-e2e55a59df96",
+        "chatSessionId": "sess_2a343e2c-81b7-46a5-8d40-3a47a4171181",
+        "timestamp": 1795770637778
+      },
+      {
+        "executionId": "faa555d6-bbb9-4273-89ce-33bc83b26ff7",
+        "chatSessionId": "sess_386a5139-e5a3-428c-a3f6-ed2d1ffde37f",
+        "timestamp": 1795772134611
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense &amp; Budget Monthly Visualizer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="header-brand">
+          <span class="header-icon">💰</span>
+          <span class="header-title">Expense &amp; Budget Monthly Visualizer</span>
+        </div>
+        <p class="header-subtitle">Track, Visualize, and Stay on Monthly Budget</p>
+      </div>
+    </header>
+
+    <main class="app-main">
+
+      <!-- ===== BALANCE CARD ===== -->
+      <section id="balance-card" class="balance-section" aria-label="Total balance">
+        <div class="balance-card" id="balanceCard">
+          <div class="balance-label">Total Expenses</div>
+          <div class="balance-amount" id="totalAmount">Rp 0</div>
+          <div class="balance-limit" id="limitInfo">Budget Limit: <strong id="limitDisplay">Rp 0</strong></div>
+          <div class="balance-warning hidden" id="limitWarning" role="alert">
+            ⚠️ You have exceeded your budget limit!
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TOP ROW: FORM + CHART ===== -->
+      <div class="top-grid">
+
+        <!-- ADD TRANSACTION FORM -->
+        <section class="card form-card" aria-label="Add transaction">
+          <h2 class="card-title card-title--ruled">Add Transaction</h2>
+          <form id="transactionForm" novalidate>
+
+            <div class="form-group">
+              <label for="itemName">Item Name</label>
+              <input
+                type="text"
+                id="itemName"
+                name="itemName"
+                placeholder="e.g. Lunch, Bus ticket…"
+                autocomplete="off"
+              />
+              <span class="field-error hidden" id="itemNameError">Item name is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Amount (Rp)</label>
+              <input
+                type="number"
+                id="amount"
+                name="amount"
+                placeholder="e.g. 25000"
+                min="1"
+              />
+              <span class="field-error hidden" id="amountError">Enter a valid positive amount.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select id="category" name="category">
+                <option value="">— Select category —</option>
+                <option value="Food">🍔 Food</option>
+                <option value="Transport">🚌 Transport</option>
+                <option value="Fun">🎉 Fun</option>
+              </select>
+              <span class="field-error hidden" id="categoryError">Please select a category.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="txDate">Date</label>
+              <input
+                type="date"
+                id="txDate"
+                name="txDate"
+              />
+              <span class="field-error hidden" id="txDateError">Date is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="budgetLimit">Budget Limit (Rp) <span class="field-hint-inline">(optional)</span></label>
+              <input
+                type="number"
+                id="budgetLimit"
+                name="budgetLimit"
+                placeholder="e.g. 1000000"
+                min="1"
+              />
+              <span class="field-hint">Set to 0 to disable the limit.</span>
+            </div>
+
+            <button type="submit" class="btn-primary" id="submitBtn">
+              + Add Transaction
+            </button>
+          </form>
+        </section>
+
+        <!-- PIE CHART -->
+        <section class="card chart-card" aria-label="Spending distribution chart">
+          <h2 class="card-title card-title--ruled">Spending by Category</h2>
+          <div class="chart-wrapper" id="chartWrapper">
+            <canvas id="spendingChart" aria-label="Pie chart of spending by category" role="img"></canvas>
+          </div>
+          <div class="chart-empty hidden" id="chartEmpty">
+            <span>📊</span>
+            <p>No data yet. Add a transaction to see the chart.</p>
+          </div>
+        </section>
+
+      </div><!-- /.top-grid -->
+
+      <!-- ===== TRANSACTION LIST ===== -->
+      <section class="card list-card" aria-label="Transaction list">
+        <div class="list-header">
+          <h2 class="card-title">Transactions</h2>
+          <div class="sort-controls" aria-label="Sort transactions">
+            <span class="sort-label">Sort by:</span>
+            <button class="sort-btn active" data-sort="date" id="sortDate">Date (Newest First)</button>
+            <button class="sort-btn" data-sort="amount-desc" id="sortAmountDesc">Amount (Descending)</button>
+            <button class="sort-btn" data-sort="amount-asc" id="sortAmountAsc">Amount (Ascending)</button>
+            <button class="sort-btn" data-sort="category" id="sortCategory">Category (A–Z)</button>
+          </div>
+        </div>
+
+        <!-- Desktop table -->
+        <div class="table-wrapper" id="tableWrapper">
+          <table class="transaction-table" aria-label="Transaction table">
+            <thead>
+              <tr>
+                <th scope="col" data-label="Date">Date</th>
+                <th scope="col" data-label="Item Name">Item Name</th>
+                <th scope="col" data-label="Category">Category</th>
+                <th scope="col" data-label="Amount" class="text-right">Amount</th>
+                <th scope="col" data-label="Actions" class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="transaction-body">
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Empty state -->
+        <div class="list-empty hidden" id="listEmpty">
+          <span>🧾</span>
+          <p>No transactions recorded yet.</p>
+        </div>
+      </section>
+
+      <!-- ===== MONTHLY SUMMARY ===== -->
+      <section class="card summary-card" aria-label="Monthly summary">
+        <h2 class="card-title card-title--ruled">Monthly Summary</h2>
+        <div id="monthly-summary">
+          <div class="list-empty hidden" id="summaryEmpty">
+            <span>📅</span>
+            <p>No data yet.</p>
+          </div>
+          <div class="monthly-grid" id="monthlyGrid"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="app-footer">
+      <p>Expense &amp; Budget Visualizer &copy; 2026 &mdash; Data stored locally in your browser.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
